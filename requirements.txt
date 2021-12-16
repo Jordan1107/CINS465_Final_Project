@@ -85,7 +85,6 @@ Twisted==21.7.0
 txaio==21.2.1
 typing_extensions==4.0.1
 urllib3==1.25.8
-usb-creator==0.3.7
 visidata==1.5.2
 wadllib==1.3.3
 websocket-client==0.53.0
