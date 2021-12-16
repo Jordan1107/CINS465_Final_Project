@@ -14,7 +14,6 @@ Click==7.0
 colorama==0.4.3
 constantly==15.1.0
 cryptography==36.0.0
-cupshelpers==1.0
 daphne==3.0.2
 dbus-python==1.2.16
 defer==1.0.6
