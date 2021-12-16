@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  {% include "chess/shared_links.html" %}
+</head>
+<body>
+  {% include "chess/navbar.html" %}
+  <div class="container"><br>
+    <div class = "jumbotron">
+      <h1>Login</h1>
+      <form action="/login/" method="POST">
+        <table>
+          {{ login_form.as_table }}
+          {% csrf_token %}
+          <input type="hidden" name="next" value="{{ request.GET.next }}">
+        </table>
+        <input type="submit" class="btn btn-primary" value = "Login"/>
+      </form>
+      <br/>
+      If you don't already have a username and password, <a href="/join">JOIN HERE</a>.
+    </div>
+  </div>
+</body>
+</html>

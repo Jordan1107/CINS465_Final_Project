@@ -1,0 +1,77 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+div * {
+  border: 2px solid black;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+#turn {
+  max-width: 451px;
+  max-height: 30px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 5px 0 0 0;
+  background: #fff;
+}
+
+.turnhighlight {
+  background: #5cb85c;
+  color: #fff;
+}
+
+#chessgame {
+  max-width: 600px;
+  max-height: 600px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 20px auto;
+}
+
+.cellprefix {
+  width: 100%;
+  height: 100%;
+  max-width: 60px;
+  max-height: 60px;
+  float: left;
+  margin: 3px;
+  padding: 15px 0 0 20px;
+}
+
+.cell {
+  border: 1px solid #000;
+  width: 100%;
+  height: 100%;
+  max-width: 60px;
+  max-height: 60px;
+  float: left;
+  margin: 3px;
+  border-radius: 5px;
+  border-collapse: collapse;
+  font-size: 30pt;
+  padding: 0 0 0 6px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.cell:hover {
+  color: #ggg;
+  background: rgba(37, 88, 228, 0.712);
+}
+
+.grey {
+  background: rgba(128, 128, 128, 0.801);
+}
+
+.green {
+  background: rgb(65, 161, 73);
+}

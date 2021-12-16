@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Chess Game</title>
+    {% include "chess/shared_links.html" %}
+</head>
+<body>
+    {% include "chess/navbar.html" %}
+    <div class="container mt-5 pt-5 ">
+        <center><h3>PLAY CHESS</h3></center>
+        <div class="col-md-6 mx-auto mt-4">
+            {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-light">
+                {{ message }}
+            </div>
+            {% endfor %}
+            {% endif %}
+            <form method="post">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <label>Enter Player name</label>
+                        <input type="text" name="username" class="form-control">
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label>Options</label>
+                        <select class="form-control" name="option">
+                            <option>Choose</option>
+                            <option value="1">Enter Game room</option>
+                            <option value="2">Create Game room</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label>Enter GameRoom Code</label>
+                        <input type="text" name="room_code" class="form-control">
+                    </div>
+                </div>
+                <!---{% if username != "" %}--->
+                <center><button type="submit" class="btn btn-light">Start Game</button></center>
+                <!---{% endif %}--->
+            </form>
+        </div>
+    </div>
+</body>
+</html>
