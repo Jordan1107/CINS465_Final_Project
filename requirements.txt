@@ -84,7 +84,6 @@ texttable==1.6.2
 Twisted==21.7.0
 txaio==21.2.1
 typing_extensions==4.0.1
-unattended-upgrades==0.1
 urllib3==1.25.8
 usb-creator==0.3.7
 visidata==1.5.2
