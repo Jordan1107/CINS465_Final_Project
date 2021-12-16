@@ -17,7 +17,6 @@ cryptography==36.0.0
 daphne==3.0.2
 dbus-python==1.2.16
 distro==1.4.0
-distro-info===0.23ubuntu1
 Django==3.0.9
 djangorestframework==3.11.1
 docker==4.1.0
