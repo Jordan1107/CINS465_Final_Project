@@ -27,7 +27,7 @@ SECRET_KEY = '*jicg3_ye2spf(wqsez-q99uc@*1e($-a+klqtyl8sl)4a$fv9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','cins465games.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['127.0.0.1','cins465games.herokuapp.com','35.209.124.24']
 
 
 # Application definition
